@@ -1,13 +1,13 @@
-from os import system as sy
+from os import system as st
 import pyautogui as pg
 while True:
-    sy("cls")
+    st("cls")
     print("-" * 67)
     print("Program made for help with some anotations by SilverAndrels v.0.0.3")
     print("-" * 67)
     anotations = input("Input your anotation: ").lower()
     if anotations == "exit":
-        sy("cls")
+        st("cls")
         break
     if anotations == "read":
         pg.hotkey('win', 'r')
@@ -16,4 +16,4 @@ while True:
     else:
         with open("C:/ProgramData/dist/ant.txt", "a") as file:
             file.write(anotations + "\n")
-        sy("cls")
+        st("cls")
