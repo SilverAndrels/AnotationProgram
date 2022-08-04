@@ -1,5 +1,5 @@
 from os import system as sy
-import pyautogui as py
+import pyautogui as pg
 while True:
     sy("cls")
     print("-" * 67)
@@ -10,9 +10,9 @@ while True:
         sy("cls")
         break
     if anotations == "read":
-        py.hotkey('win', 'r')
-        py.write('C:/ProgramData/dist/ant.txt')
-        py.press('enter')
+        pg.hotkey('win', 'r')
+        pg.write('C:/ProgramData/dist/ant.txt')
+        pg.press('enter')
     else:
         with open("C:/ProgramData/dist/ant.txt", "a") as file:
             file.write(anotations + "\n")
