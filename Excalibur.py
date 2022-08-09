@@ -4,6 +4,6 @@ print("-" * 67)
 print("Program made for help with some anotations by SilverAndrels v.0.0.3")
 print("-" * 67)
 anotations = input("Input your anotation: ").lower()
-with open("/home/whoamisilver/bin/ant.txt", "a") as file:
+with open("path to .txt file", "a") as file:
     file.write(anotations + "\n")
 st("clear")
